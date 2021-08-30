@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body style="background: pink; text-align: center;">
+        <div class="container">
+            <h1 style="color: white; font-weight: bold;">Face Recognition Web App</h1>
+            <br>
+            <br>
+            <h3 style="color: white;">Model is trained to identify the following objects:</h3>
+            <br>
+            <br>
+            <button class="btn btn-info" style="width: 800px;">Elan</button>
+            <br>
+            <br>
+            <button class="btn btn-info" style="width: 800px;">EK</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4 style="color: white;">Webcam View-</h4>
+            <br>
+            <div id="cam_display" style="border: black 2px dashed; width: 400px; height: 300px;"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="image_display" style="border: black 2px dashed; width: 400px; height: 300px;"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="buttons">
+                <button class="btn btn-info" onclick="Capture()">Capture Image</button>
+                <br>
+                <br>
+                <button class="btn btn-info" onclick="Identify()">Identify Object</button>
+                <br>
+                <br>
+                <br>
+                <h1 style="color: white;">Object: </h1><span id="object_display"></span>
+                <h1 style="color: white;">Accuracy: </h1><span id="accuracy_display"></span>
+            </div>  
+        </div>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
